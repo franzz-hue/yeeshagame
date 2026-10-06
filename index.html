@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beneath the Forgotten House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" hidden>
+  <div id="obj"></div>
+  <div id="keys"></div>
+  <button id="mute" class="mutebtn small">Sound: On</button>
+  <div id="msg"></div>
+  <div id="prompt"></div>
+</div>
+
+<section id="title" class="screen">
+  <h1>Beneath the Forgotten House</h1>
+  <p class="sub">Something below the floorboards is awake.</p>
+  <button id="start" disabled>Start Game</button>
+  <button id="how">Instructions</button>
+  <button id="snd" class="mutebtn">Sound: On</button>
+  <p id="load" class="dim">Loading…</p>
+</section>
+
+<section id="howto" class="screen" hidden>
+  <h2>Instructions</h2>
+  <p><b>Move</b> WASD or arrow keys &nbsp; <b>Interact</b> E &nbsp; <b>Flashlight</b> F &nbsp; <b>Pause</b> Esc</p>
+  <p>Find three keys, read what the notes reveal, then unlock the iron door. The thing in the dark hunts by sight: break its line of sight behind walls and corners and it will lose you.</p>
+  <button id="back">Back</button>
+</section>
+
+<section id="intro" class="screen" hidden>
+  <h2>The Harlow Cellar</h2>
+  <p>You came to photograph the Harlow house, empty since the family vanished. In the cellar the hatch slammed shut behind you and the lock turned on its own.</p>
+  <p>All you have is a flashlight. Somewhere in these halls are three keys, and the only way out is the iron door.</p>
+  <button id="begin">Descend</button>
+</section>
+
+<section id="note" class="screen" hidden>
+  <div class="paper"><p id="ntext"></p></div>
+  <p class="dim">Press E to put the note away</p>
+</section>
+
+<section id="pause" class="screen" hidden>
+  <h2>Paused</h2>
+  <button id="resume">Resume</button>
+  <button id="restartP">Restart</button>
+</section>
+
+<section id="over" class="screen" hidden>
+  <h2 class="blood">It found you.</h2>
+  <button id="restartO">Restart</button>
+</section>
+
+<section id="win" class="screen" hidden>
+  <h2>You escaped.</h2>
+  <p>Cold forest air. The stars are out. The cellar hatch is closed behind you.</p>
+  <p class="dim">But in the trees, you could swear something is smiling.</p>
+  <button id="again">Play Again</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
